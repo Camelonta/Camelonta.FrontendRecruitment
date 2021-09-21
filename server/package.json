@@ -1,0 +1,28 @@
+{
+  "name": "camelonta-frontend-recruitment-server",
+  "version": "1.0.0",
+  "description": "spotify auth server example",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Camelonta/Camelonta.FrontendRecruitment.git"
+  },
+  "author": "Camelonta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Camelonta/Camelonta.FrontendRecruitment/issues"
+  },
+  "homepage": "https://github.com/Camelonta/Camelonta.FrontendRecruitment#readme",
+  "type": "module",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
