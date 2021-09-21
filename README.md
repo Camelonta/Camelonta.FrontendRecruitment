@@ -1,4 +1,4 @@
-# Frontend Recruitment Excercise
+# About
 In this exercise, you will leverage the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) in order to fetch and present data in a meaningful way.
 
 You are tasked with creating a simple application where a user can search for an artist and read more about that artist. In addition, the application should also list albums by that artist.
