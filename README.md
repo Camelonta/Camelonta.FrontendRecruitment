@@ -23,13 +23,13 @@ In order to save time you can use a CSS framework of your choosing, and if so co
 
 ## Authentication to Spotify API
 The Spotify API is locked behind authentication but within the `server` directory you will find a small server application that you can use to retrieve an access token that is needed.
+
 Here is some instruction on how to get it going.
 
-First, update the credentials in the `.env` file with what we've given you. If you haven't received them just ask us for them. Or you can register your own application on the [Spotify Developer Portal](https://developer.spotify.com) and use your own client id and client secret. Or as a bonus challenge, you can create your own implementation with the same or a different authentication strategy.
+First, update the credentials in the `.env.example` file with what we've given you, second rename the file to `.env`. If you haven't received the credentials from us, please ask. You can also register your own application on the [Spotify Developer Portal](https://developer.spotify.com) and use your own client id and client secret. Or as a bonus challenge, you can create your own implementation of the authentication with the same or a different authentication strategy.
 
-
-Here is how it works (note that you need to have node installed on your machine)
-```.bash
+Here is how the server example works *(note that you need to have node installed on your machine)*
+```bash
 cd server // navigate into the server directory
 npm install // install the necessary packages
 npm run start // start and run the server
@@ -48,8 +48,7 @@ Whenever you are making a request to the Spotify API you need to provide an acce
 
 Once you have it you need to add the following header to your request. See the example below.
 
-```.js
-
+```js
 var options = {
     headers: {
         Authorization: 'Bearer ' + ACCESS_TOKEN,
