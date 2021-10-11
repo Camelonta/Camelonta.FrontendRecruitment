@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import fetch from 'node-fetch';
+import cors from 'cors';
 
 const port = process.env.PORT || 5000;
 
@@ -10,6 +11,8 @@ var spotify_client_id = process.env.SPOTIFY_CLIENT_ID;
 var spotify_client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 
 var app = express();
+
+app.use(cors());
 
 var ACCESS_TOKEN = null;
 
@@ -32,7 +35,11 @@ const checkStatus = (response) => {
   }
 };
 
-app.get('/auth/login', async (req, res) => {
+app.get('/', async (_req, res) => {
+  res.json({ "message": "Hello World!", "instructions": "Take a look inside of main.js to see the available endpoints. Good luck with the assignment :)" });
+})
+
+app.get('/auth/login', async (_req, res) => {
   try {
     const params = new URLSearchParams();
     params.append('grant_type', 'client_credentials');
@@ -62,7 +69,7 @@ app.get('/auth/login', async (req, res) => {
   }
 });
 
-app.get('/auth/token', (req, res) => {
+app.get('/auth/token', (_req, res) => {
   if (!ACCESS_TOKEN) {
     res
       .status(400)
