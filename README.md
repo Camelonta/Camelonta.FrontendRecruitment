@@ -11,10 +11,10 @@ Please put emphasis on good application- and code structure, as well as proper p
 - The application must follow the [Spotify Developer Policy](https://developer.spotify.com/policy/)
 - A user must be able to search for an artist
 - A user must be able to see the results of the search in a meaningful way
-- A user must be able to see more information about an artist
-- A user must be able to see albums by an artist
+- A user must be able to see a single artist in a meaningful way such as a "detail view"
+- A user must be able to see albums **OR** top tracks by an artist
 
-Though not a requirement; we highly recommend that you write the application using React or native javascript as those are our tools of the trade.
+Though not a requirement; we highly recommend that you write the application using React or native javascript as those are our tools of the trade. Or even better if you use our tools of the trade for building websites and applications - [Next.js](https://nextjs.org/).
 
 ## Design
 You are free to create your own design, our only requirement is that you develop it with responsiveness in mind. You don't need to consider a layout for a tablet-sized screen. We won't focus on your design skills so primarily focus on writing good functionality, but that said you are more than welcome to create an attractive layout.
@@ -61,9 +61,10 @@ fetch('https://api.spotify.com/v1/search?q=Veronica%20Maggio&type=artist', optio
 
 ### The relevant endpoints
 In order to create the application you need to use the following endpoints
-- `https://api.spotify.com/v1/search` - Search ([documentation](https://developer.spotify.com/documentation/web-api/reference/#category-search))
-- `https://api.spotify.com/v1/artists/{id}` - Get an artist ([documentation](https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-an-artist))
-- `https://api.spotify.com/v1/artists/{id}/albums` - Get an artists albums ([documentation](https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-an-artists-albums))
+- `GET https://api.spotify.com/v1/search` - Search ([documentation](https://developer.spotify.com/documentation/web-api/reference/#category-search))
+- `GET https://api.spotify.com/v1/artists/{id}` - Get an artist ([documentation](https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-an-artist))
+- `GET https://api.spotify.com/v1/artists/{id}/albums` - Get an artists albums ([documentation](https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-an-artists-albums))
+- `GET https://api.spotify.com/v1/artists/{id}/top-tracks` - Get an artists top tracks ([documentation](https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-an-artists-top-tracks))
 
 ## Bonus
 Should you have the time and inclination, here are some bonus challenges:
