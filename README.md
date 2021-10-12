@@ -1,9 +1,9 @@
 # About
 In this exercise, you will leverage the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) in order to fetch and present data in a meaningful way.
 
-You are tasked with creating a simple application where a user can search for an artist and read more about that artist. In addition, the application should also list albums by that artist.
+You are tasked with creating a application where a user can search for an artist and see more information about that artist, such as albums or top tracks.
 
-When creating this simple application there are many useful libraries and frameworks out there, and should you choose to use any then please consider why you chose them and how they contribute to your solution.
+When creating this  application there are many useful libraries and frameworks out there, and should you choose to use any then please consider why you chose them and how they contribute to your solution.
 
 Please put emphasis on good application- and code structure, as well as proper programming principles and best practices.
 
@@ -71,7 +71,6 @@ Should you have the time and inclination, here are some bonus challenges:
 
 - Implement functionality for storing one or more artists as favorites for easy access
 - Implement functionality for listening to a preview of an album (see the `preview_url` property when listing albums)
-- Implement functionality for listing top tracks of an artist ([endpoint](https://developer.spotify.com/documentation/web-api/reference/#endpoint-get-an-artists-top-tracks))
 - Implement pagination for the search results
 - Write some examples of unit tests
 - Use Typescript
