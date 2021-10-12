@@ -14,7 +14,7 @@ Please put emphasis on good application- and code structure, as well as proper p
 - A user must be able to see a single artist in a meaningful way such as a "detail view"
 - A user must be able to see albums **OR** top tracks by an artist
 
-Though not a requirement; we highly recommend that you write the application using React or native javascript as those are our tools of the trade. Or even better if you use our tools of the trade for building websites and applications - [Next.js](https://nextjs.org/).
+Though not a requirement; we highly recommend that you write the application using React or native javascript. Or even better if you use our main framework for building websites and applications - [Next.js](https://nextjs.org/).
 
 ## Design
 You are free to create your own design, our only requirement is that you develop it with responsiveness in mind. You don't need to consider a layout for a tablet-sized screen. We won't focus on your design skills so primarily focus on writing good functionality, but that said you are more than welcome to create an attractive layout.
